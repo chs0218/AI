@@ -24,7 +24,7 @@ public:
   template <class graph_type>
   static double Calculate(const graph_type& G, int nd1, int nd2)
   {
-    return Vec2DDistance(G.GetNode(nd1).Pos(), G.GetNode(nd2).Pos());
+    return Vec2DMyDistance(G.GetNode(nd1).Pos(), G.GetNode(nd2).Pos());
   }
 };
 

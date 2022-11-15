@@ -75,6 +75,7 @@ void Goal_Think::Activate()
 //-----------------------------------------------------------------------------
 int Goal_Think::Process()
 {
+
   ActivateIfInactive();
   
   int SubgoalStatus = ProcessSubgoals();

@@ -269,6 +269,14 @@ inline Vector2D Vec2DNormalize(const Vector2D &v)
   return vec;
 }
 
+inline double Vec2DMyDistance(const Vector2D& v1, const Vector2D& v2)
+{
+
+    double ySeparation = abs(v2.y - v1.y);
+    double xSeparation = abs(v2.x - v1.x);
+
+    return ySeparation + xSeparation;
+}
 
 inline double Vec2DDistance(const Vector2D &v1, const Vector2D &v2)
 {

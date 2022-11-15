@@ -424,6 +424,9 @@ void Pathfinder::Render()
 {
   gdi->TransparentText();
   
+  if (!m_pGraph)
+      return;
+
   //render all the cells
   for (int nd=0; nd<m_pGraph->NumNodes(); ++nd)
   {
